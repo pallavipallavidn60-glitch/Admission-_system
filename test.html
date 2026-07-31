@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Test</title></head>
+<body>
+    <h1>Test Connection</h1>
+    <button onclick="test()">Test</button>
+    <p id="result"></p>
+    <script>
+        async function test() {
+            try {
+                let res = await fetch('http://localhost:5000/students');
+                let data = await res.json();
+                document.getElementById('result').innerHTML = '✅ Connected! Students: ' + data.length;
+            } catch(e) {
+                document.getElementById('result').innerHTML = '❌ Error: ' + e.message;
+            }
+        }
+        test();
+    </script>
+</body>
+</html>

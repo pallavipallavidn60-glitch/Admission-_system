@@ -1,0 +1,7 @@
+{
+  "smtp_server": "smtp.gmail.com",
+  "smtp_port": 587,
+  "sender_email": "pallavipallavidn60@gmail.com",
+  "sender_password": "trxm ecls mgwu oyoj",
+  "use_tls": true
+}
